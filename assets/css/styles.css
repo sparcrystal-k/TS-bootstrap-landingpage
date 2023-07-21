@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "WorkSans";
+  src: url("../fonts/WorkSans.otf") format("opentype");
+}
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro.otf") format("opentype");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter.otf") format("opentype");
+}
+
+.header {
+  z-index: 9999;
+}
+
+.heading-text-content {
+  border-radius: 50px 50px 0 0;
+  padding-left: 10%;
+  color: #26358b;
+  border-bottom: 3px solid #e3f3fa;
+}
+
+.drop-user {
+  font-family: WorkSans;
+}
+
+.logo-title {
+  font-family: WorkSans;
+}
+
+.progress {
+  height: 10px !important;
+}
+
+.left-sidebar {
+  background: #e3f3fa;
+  color: #26358b;
+  transition: all 0.5s;
+}
+
+.module-box {
+  border-left: 3px solid white;
+}
+
+.lecture-content {
+  border-radius: 0px 21px 21px 21px;
+  box-shadow: -3px 6px 11px -5px rgba(0, 0, 0, 0.15);
+}
+
+.main-content {
+  color: #26358b;
+}
+
+.content {
+  transition: all 1s;
+}
+
+.inprogress {
+  border-radius: 30px;
+  border: 1.5px solid #26358b;
+}
+
+.inprogress-content {
+  border-radius: 21px;
+  font-size: 13px;
+  width: 60%;
+}
+
+.btn-download {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  box-shadow: -9px 6px 30px -12px rgba(0, 0, 0, 0.2);
+}
+
+.download-text {
+  border-bottom: #26358b 2px solid;
+}
+
+.toggle-sidebar {
+  top: 75px;
+}
+
+.watch-container {
+  width: 50%;
+  height: 280px;
+  padding: 40px;
+  margin: auto;
+  border-radius: 21px;
+  background: #e3f3fa;
+  box-shadow: -9px 12px 30px -11px rgba(0, 0, 0, 0.25);
+}
+
+.watch-content {
+  height: 100%;
+}
+
+.btn-play {
+  background: url("../images/Logo\ 1.png");
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
+
+.footer {
+  background-color: #26358b;
+}
+
+.footer-title {
+  font-size: 13px;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 0 !important;
+    padding-top: 10px !important;
+  }
+  .progress-title {
+    font-size: 15px !important;
+  }
+  .inprogress-content {
+    width: 80% !important;
+  }
+  .watch-container {
+    width: 60%;
+  }
+  .left-sidebar {
+    display: none;
+    position: fixed !important;
+    height: 100vh !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 999999;
+    width: 300px !important;
+    padding: 5px !important;
+    font-size: 13px;
+    transition: all 1s;
+  }
+  .module-box {
+    padding: 5px !important;
+  }
+  .content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+  }
+  .button-group button {
+    font-size: 12px !important;
+  }
+  .footer {
+    padding: 20px 0 20px 0 !important;
+    font-size: 10px;
+  }
+
+  .footer-title {
+    font-size: 10px;
+  }
+
+  .follow {
+    margin-left: 20px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    margin: 10px !important;
+    padding: 0 !important;
+  }
+  .inprogress-content {
+    flex-direction: column;
+  }
+  .watch-container {
+    height: 200px;
+  }
+}
+
+.show-btn {
+  top: -7px;
+  left: -12px;
+}
+.show-img {
+  width: 5rem;
+  height: auto;
+}
+.fade-out {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
